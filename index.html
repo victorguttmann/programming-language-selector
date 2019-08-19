@@ -29,10 +29,44 @@
         <p>Your fate is now in our hands. Your choices are still only yours in the most of mundane senses. We are already you, and you already us.</p>
       </div>
 
-      <div id="questionBody">
+      <div id="question1Gather">
+        <form id="formQ1">
+          <div class="form-group">
+            <label for="question1">what do like the most? apples, oranges, or bananas? for apple, enter: 1. for orange, enter: 10. for bananas: enter 100.</label>
+            <input id="question1" class="form-control" type="text">
+          </div>
+          <button type="submit" class="btn">I don't even like fruit.</button>
+        </form>
+      </div> <!-- question#1 div -->
+
+<!-- The point of this stupid enter "1","10",or"100" entry system is to have a variable continually adding. If the final value for 3 question is higher than 200, then answer 3 will be displayed, between 200 and 20, answer 2, 19 and lower, answer 1. Logic is repeated for questions 2 and 3. -->
+
+      <div id="question2Gather">
+        <form id="formQ2">
+          <div class="form-group">
+            <label for="question2">what do like the leaset? terrorism, war, or slavery? for terrorism, enter: 1. for war, enter: 10. for slavery: enter 100.</label>
+            <input id="question2" class="form-control" type="text">
+          </div>
+          <button type="submit" class="btn">This is a horrible question.</button>
+        </form>
+      </div> <!-- question#2 div -->
+
+      <div id="question3Gather">
+        <form id="formQ3">
+          <div class="form-group">
+            <label for="question3">what language do you think sounds the coolest? for python, enter: python. for java, enter: java. for ruby: enter ruby.</label>
+            <input id="question3" class="form-control" type="text">
+          </div>
+          <button type="submit" class="btn">Hey look a programming question.</button>
+        </form>
+      </div> <!-- question#3 div -->
+
+      <div id="decisionTime">
+        <h1>THE DECISION HAS BEEN MADE, <span class="nameSpan"></span>!</h1>
+        <p>You will embark on studying the wisdom of:<span class="resultSpan"></span>!</p>
       </div>
 
-    </div>
+    </div> <!-- container div -->
 
   </body>
 
@@ -43,11 +77,11 @@
 
 - HTML - input form: 5 questions, 3 options, each option corresponds to a language
 - css - bootstrap container, color the submission buttons, background, alignment
-- JS - grab the answers from the questions, add them up as variables, highest language column wins
+- JS - grab the answers from the questions, add them up as variables, UPDATE: TOTALLY UNSCALABE & PATEHTIC LESS THAN/GREATER THAN/MATH FORMULA INSTEAD OF DOING THIS CORRECTLY/WELL.
 
 
 REACH GOALS:
 
-- When you click submit name, have a brief half second red text flash that says "initiating trace..."
+- When you click submit name, have a brief half second red text flash that says "initiating trace..." - there's no way we're getting that shit done victor, give up.
 
-   --!>
+   -->
